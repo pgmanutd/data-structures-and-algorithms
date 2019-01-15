@@ -1,0 +1,16 @@
+.idea/
+.history/
+node_modules/
+.DS_store
+npm-debug.log
+reports/
+dist/
+styleguide-dist/
+*.iml
+jest_*
+.env
+.cache/
+log
+logs
+pacts
+version.properties

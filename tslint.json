@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-clean-code",
+    "tslint-consistent-codestyle",
+    "tslint-sonarts",
+    "tslint-eslint-rules",
+    "tslint-immutable",
+    "tslint-config-prettier"
+  ],
+  "rulesDirectory": ["tslint-plugin-prettier", "rxjs-tslint"],
+  "rules": {
+    "prettier": {
+      "severity": "warning"
+    },
+    "semicolon": [false],
+    "quotemark": [false],
+    "ter-indent": [false],
+    "member-access": [false],
+    "object-literal-sort-keys": [false],
+    "no-var-requires": [false],
+    "ordered-imports": [false],
+    "interface-name": [true, "never-prefix"],
+    "rxjs-collapse-imports": true,
+    "rxjs-pipeable-operators-only": true,
+    "rxjs-no-static-observable-methods": true,
+    "rxjs-proper-imports": true,
+    "no-big-function": false,
+    "no-hardcoded-credentials": false
+  }
+}

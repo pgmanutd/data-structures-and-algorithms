@@ -1,0 +1,70 @@
+{
+  "name": "data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "Data Structures and Algorithms with functional twist",
+  "scripts": {
+    "lint:scripts": "tslint --project ./tsconfig.json -t stylish",
+    "lint": "npm run lint:scripts",
+    "typecheck": "tsc --noEmit -p ./tsconfig.typecheck.json",
+    "test": "cross-env NODE_ENV=test jest --projects ./scripts/jest --cacheDirectory \".cache/jest/\"",
+    "test:watch": "npm run test -- --watch",
+    "test:changed-only": "npm run test -- --onlyChanged",
+    "test:coverage": "npm run test -- --coverage",
+    "test:update-snapshot": "npm run test -- --updateSnapshot",
+    "format": "npm run lint:scripts -- --fix",
+    "format:tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "check": "npm run lint && npm run typecheck && npm run test:coverage -- --bail",
+    "coveralls": "cat ./reports/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./reports/coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgmanutd/data-structures-and-algorithms.git"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "data",
+    "structures",
+    "data structures",
+    "data-structures",
+    "algorithms",
+    "ramda",
+    "functional programming",
+    "functional-programming",
+    "functional",
+    "fp"
+  ],
+  "author": "pgmanutd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pgmanutd/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/pgmanutd/data-structures-and-algorithms#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^7.3.2",
+    "@commitlint/config-conventional": "^7.3.1",
+    "@types/jest": "^23.3.12",
+    "@types/node": "^10.12.18",
+    "@types/ramda": "^0.25.46",
+    "babel-core": "^6.26.3",
+    "coveralls": "^3.0.2",
+    "cross-env": "^5.2.0",
+    "exec-sh": "^0.3.2",
+    "husky": "^1.3.1",
+    "jest": "^23.6.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3",
+    "ramda": "^0.26.1",
+    "rxjs-tslint": "^0.1.6",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.1",
+    "tslint-clean-code": "^0.2.9",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-consistent-codestyle": "^1.15.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-immutable": "^5.0.1",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-sonarts": "^1.8.0",
+    "typescript": "^3.2.2"
+  }
+}
