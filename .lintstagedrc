@@ -1,6 +1,8 @@
 {
-  "*.{ts}": [
-    "tslint --fix",
-    "git add"
+  "*.ts": [
+    "npm run lint:scripts -- --fix",
+    "git add",
+    "npm run typecheck",
+    "npm run test:coverage -- --bail --findRelatedTests"
   ]
 }
