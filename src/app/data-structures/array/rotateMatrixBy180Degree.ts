@@ -21,7 +21,7 @@ import * as R from 'ramda';
 const rotateMatrixBy180Degree = R.compose(
   R.map(R.reverse),
   /**
-   * TODO: Some issue with ramda @types.
+   * NOTE: Some issue with ramda @types.
    * "reverse" typing is failing when used with "map" in "compose".
    * This worked perfectly when lodash/fp was used.
    */

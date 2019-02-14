@@ -1,6 +1,6 @@
 {
   "*.ts": [
-    "npm run lint:scripts -- --fix",
+    "npm run format",
     "git add",
     "npm run typecheck",
     "npm run test:coverage -- --bail --findRelatedTests"

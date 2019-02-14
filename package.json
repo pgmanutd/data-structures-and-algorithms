@@ -5,7 +5,8 @@
   "scripts": {
     "lint:scripts": "tslint --project ./tsconfig.typecheck.json -t stylish",
     "lint": "npm run lint:scripts",
-    "typecheck": "tsc --noEmit -p ./tsconfig.typecheck.json",
+    "typecheck": "tsc --noEmit",
+    "typecheck:project": "npm run typecheck -- -p ./tsconfig.typecheck.json",
     "test": "cross-env NODE_ENV=test jest --projects ./scripts/jest --cacheDirectory \".cache/jest/\"",
     "test:watch": "npm run test -- --watch",
     "test:changed-only": "npm run test -- --onlyChanged",
