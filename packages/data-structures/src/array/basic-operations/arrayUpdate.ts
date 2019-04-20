@@ -1,6 +1,6 @@
 import * as R from 'ramda';
 
-import { mapIndexed } from 'utils/ramdaExtensions';
+import { mapIndexed } from '@data-structures-and-algorithms/utils';
 
 // Solution 1
 export const arrayUpdateUsingSlice = R.curry(

@@ -6,14 +6,12 @@ popular algorithms and data structures with functional twist ([Functional over I
 _☝ Note that this project is meant to be used for learning and researching purposes
 only and it is **not** meant to be used for production._
 
-## Data Structures
+## [Data Structures](./packages/data-structures)
 
 [From Wikipedia](https://en.wikipedia.org/wiki/Data_structure):
 In computer science, a data structure is a data organization, management and storage format that enables efficient access and modification. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.
 
-- [Array](./src/app/data-structures/array)
-
-## Algorithms
+## [Algorithms](./packages/algorithms)
 
 [From Wikipedia](https://en.wikipedia.org/wiki/Algorithm): In mathematics and computer science, an algorithm (/ˈælɡərɪðəm/) is an unambiguous specification of how to solve a class of problems. Algorithms can perform calculation, data processing, and automated reasoning tasks.
 

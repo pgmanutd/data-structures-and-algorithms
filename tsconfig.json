@@ -16,13 +16,16 @@
     "pretty": true,
     "allowJs": true,
     "resolveJsonModule": true,
-    "baseUrl": "./src/app",
+    "baseUrl": "./packages",
     "paths": {
-      "utils/*": ["utils/*"]
+      "@data-structures-and-algorithms/utils*": [
+        "utils/src*",
+        "utils/src/index"
+      ]
     },
     "typeRoots": ["node_modules/@types"],
     "types": ["node", "jest"]
   },
-  "include": ["src/app/**/*", "src/typings/**/*"],
+  "include": ["packages/**/*", "typings/**/*"],
   "exclude": ["node_modules", "**/*.test.ts", "**/*.mock.ts"]
 }

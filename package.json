@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Data Structures and Algorithms with functional twist",
   "scripts": {
+    "clean": "lerna clean -y",
+    "bootstrap": "lerna bootstrap",
     "lint:scripts": "tslint --project ./tsconfig.typecheck.json -t stylish",
     "lint": "npm run lint:scripts",
-    "typecheck": "tsc --noEmit",
-    "typecheck:project": "npm run typecheck -- -p ./tsconfig.typecheck.json",
+    "typecheck": "tsc --noEmit -p ./tsconfig.typecheck.json",
     "test": "cross-env NODE_ENV=test jest --projects ./scripts/jest --cacheDirectory \".cache/jest/\"",
     "test:watch": "npm run test -- --watch",
     "test:changed-only": "npm run test -- --onlyChanged",
@@ -16,6 +17,9 @@
     "format:tslint-check": "tslint-config-prettier-check ./tslint.json",
     "check": "npm run lint && npm run typecheck && npm run test:coverage -- --bail",
     "coveralls": "cat ./reports/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./reports/coverage"
+  },
+  "engines": {
+    "node": ">=8"
   },
   "repository": {
     "type": "git",
@@ -35,37 +39,37 @@
     "functional",
     "fp"
   ],
-  "author": "pgmanutd",
+  "author": "pgmanutd <prashantmanunited@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pgmanutd/data-structures-and-algorithms/issues"
   },
   "homepage": "https://github.com/pgmanutd/data-structures-and-algorithms#readme",
   "devDependencies": {
-    "@commitlint/cli": "^7.5.1",
+    "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^10.12.24",
-    "@types/ramda": "^0.25.48",
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.6",
+    "@types/ramda": "^0.26.7",
     "babel-core": "^6.26.3",
-    "coveralls": "^3.0.2",
+    "coveralls": "^3.0.3",
     "cross-env": "^5.2.0",
     "exec-sh": "^0.3.2",
     "husky": "^1.3.1",
-    "jest": "^24.1.0",
-    "lint-staged": "^8.1.3",
-    "prettier": "^1.16.4",
-    "ramda": "^0.26.1",
-    "rxjs-tslint": "^0.1.6",
-    "ts-jest": "^23.10.5",
-    "tslint": "^5.12.1",
+    "jest": "^24.7.1",
+    "lerna": "^3.13.3",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.17.0",
+    "rxjs-tslint": "^0.1.7",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.16.0",
     "tslint-clean-code": "^0.2.9",
     "tslint-config-prettier": "^1.18.0",
-    "tslint-consistent-codestyle": "^1.15.0",
+    "tslint-consistent-codestyle": "^1.15.1",
     "tslint-eslint-rules": "^5.4.0",
-    "tslint-immutable": "^5.1.2",
+    "tslint-immutable": "^5.5.2",
     "tslint-plugin-prettier": "^2.0.1",
     "tslint-sonarts": "^1.9.0",
-    "typescript": "^3.3.3"
+    "typescript": "^3.4.4"
   }
 }

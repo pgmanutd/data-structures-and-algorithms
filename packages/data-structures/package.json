@@ -1,0 +1,22 @@
+{
+  "name": "@data-structures-and-algorithms/data-structures",
+  "version": "1.0.0",
+  "description": "Data structures repo",
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgmanutd/data-structures-and-algorithms.git"
+  },
+  "author": "pgmanutd <prashantmanunited@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pgmanutd/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/pgmanutd/data-structures-and-algorithms/tree/master/packages/data-structures#readme",
+  "dependencies": {
+    "@data-structures-and-algorithms/utils": "^1.0.0",
+    "ramda": "^0.26.1"
+  }
+}

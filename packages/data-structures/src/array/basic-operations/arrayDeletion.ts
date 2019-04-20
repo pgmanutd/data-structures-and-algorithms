@@ -1,6 +1,6 @@
 import * as R from 'ramda';
 
-import { filterIndexed } from 'utils/ramdaExtensions';
+import { filterIndexed } from '@data-structures-and-algorithms/utils';
 
 // Solution 1
 export const arrayDeletionUsingSlice = R.curry(

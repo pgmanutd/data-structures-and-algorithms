@@ -1,0 +1,21 @@
+{
+  "name": "@data-structures-and-algorithms/utils",
+  "version": "1.0.0",
+  "description": "Shared utilities",
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgmanutd/data-structures-and-algorithms.git"
+  },
+  "author": "pgmanutd <prashantmanunited@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pgmanutd/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/pgmanutd/data-structures-and-algorithms/tree/master/packages/utils#readme",
+  "dependencies": {
+    "ramda": "^0.26.1"
+  }
+}

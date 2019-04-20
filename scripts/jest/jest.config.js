@@ -4,7 +4,7 @@ module.exports = {
   rootDir: '../..',
   verbose: false,
   notify: false,
-  roots: ['<rootDir>/src/app'],
+  roots: ['<rootDir>/packages'],
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.ts$',
   transform: {
     '^.+\\.ts$': 'ts-jest',
@@ -17,12 +17,13 @@ module.exports = {
   moduleNameMapper: {
     '^.+\\.(jpe?g|png|gif|ttf|eot|woff|svg|json)$':
       '<rootDir>/scripts/jest/fileMock.js',
+    '^@data-structures-and-algorithms/utils(.*)$': '<rootDir>/packages/utils/src$1',
   },
   moduleFileExtensions: ['ts', 'js', 'json', 'node'],
-  moduleDirectories: ['node_modules', 'src/app', 'src/app/utils'],
+  moduleDirectories: ['node_modules', 'packages'],
   setupFiles: ['<rootDir>/scripts/jest/throwConsoleError.js'],
-  collectCoverageFrom: ['src/app/**'],
-  coveragePathIgnorePatterns: ['src/app/index.ts', '.*.(test|spec).ts?.snap?$'],
+  collectCoverageFrom: ['packages/**/*.ts'],
+  coveragePathIgnorePatterns: ['.*.(test|spec).ts?.snap?$'],
   coverageDirectory: 'reports/coverage',
   coverageThreshold: {
     global: {
