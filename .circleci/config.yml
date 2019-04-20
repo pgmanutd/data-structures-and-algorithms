@@ -16,6 +16,10 @@ jobs:
           name: install
           command: npm install
 
+      - run:
+          name: bootstrap
+          command: npm run bootstrap
+
       - save_cache:
           paths:
             - node_modules
