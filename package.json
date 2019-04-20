@@ -2,10 +2,17 @@
   "name": "data-structures-and-algorithms",
   "version": "1.0.0",
   "description": "Data Structures and Algorithms with functional twist",
+  "typesVersions": {
+    ">=3.4": {
+      "*": [
+        "ts3.4/*"
+      ]
+    }
+  },
   "scripts": {
     "clean": "lerna clean -y",
     "bootstrap": "lerna bootstrap",
-    "lint:scripts": "tslint --project ./tsconfig.typecheck.json -t stylish",
+    "lint:scripts": "eslint \"packages/**/*.{js,ts}\" \"scripts/**/*.{js,ts}\" --cache --cache-location \".cache/.eslintcache/\"",
     "lint": "npm run lint:scripts",
     "typecheck": "tsc --noEmit -p ./tsconfig.typecheck.json",
     "test": "cross-env NODE_ENV=test jest --projects ./scripts/jest --cacheDirectory \".cache/jest/\"",
@@ -14,7 +21,7 @@
     "test:coverage": "npm run test -- --coverage",
     "test:update-snapshot": "npm run test -- --updateSnapshot",
     "format": "npm run lint:scripts -- --fix",
-    "format:tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "format:check": "eslint --print-config .eslintrc | eslint-config-prettier-check",
     "check": "npm run lint && npm run typecheck && npm run test:coverage -- --bail",
     "coveralls": "cat ./reports/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./reports/coverage"
   },
@@ -51,25 +58,20 @@
     "@types/jest": "^24.0.11",
     "@types/node": "^11.13.6",
     "@types/ramda": "^0.26.7",
+    "@typescript-eslint/parser": "^1.6.0",
     "babel-core": "^6.26.3",
     "coveralls": "^3.0.3",
     "cross-env": "^5.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "exec-sh": "^0.3.2",
     "husky": "^1.3.1",
     "jest": "^24.7.1",
     "lerna": "^3.13.3",
     "lint-staged": "^8.1.5",
     "prettier": "^1.17.0",
-    "rxjs-tslint": "^0.1.7",
     "ts-jest": "^24.0.2",
-    "tslint": "^5.16.0",
-    "tslint-clean-code": "^0.2.9",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-consistent-codestyle": "^1.15.1",
-    "tslint-eslint-rules": "^5.4.0",
-    "tslint-immutable": "^5.5.2",
-    "tslint-plugin-prettier": "^2.0.1",
-    "tslint-sonarts": "^1.9.0",
     "typescript": "^3.4.4"
   }
 }

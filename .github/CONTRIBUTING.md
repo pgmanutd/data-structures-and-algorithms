@@ -8,7 +8,7 @@ Want to contribute? Great! Check the guidelines below.
 - [Typescript](https://www.typescriptlang.org/) - a strict syntactical superset of JavaScript, and adds optional static typing to the language
 - [Jest](https://jestjs.io/) - a testing framework
 - [RamdaJS](https://ramdajs.com/) - a library designed specifically for a functional programming style, one that makes it easy to create functional pipelines, one that never mutates user data
-- [Tslint](https://palantir.github.io/tslint/): an extensible static analysis tool that checks TypeScript code for readability, maintainability, and functionality errors
+- [ESLint](https://eslint.org/): a fully pluggable tool for identifying and reporting on patterns in JavaScript
 - [Prettier](https://prettier.io/): an opinionated code formatter
 
 ## Development
@@ -27,7 +27,7 @@ npm run test:coverage
 
 ## Important commands:
 
-Run tslint on all ts files:
+Run eslint on all ts files:
 
 ```bash
 $ npm run lint

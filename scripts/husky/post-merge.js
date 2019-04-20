@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 const execSh = require('exec-sh');
 
 execSh(

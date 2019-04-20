@@ -17,7 +17,8 @@ module.exports = {
   moduleNameMapper: {
     '^.+\\.(jpe?g|png|gif|ttf|eot|woff|svg|json)$':
       '<rootDir>/scripts/jest/fileMock.js',
-    '^@data-structures-and-algorithms/utils(.*)$': '<rootDir>/packages/utils/src$1',
+    '^@data-structures-and-algorithms/utils(.*)$':
+      '<rootDir>/packages/utils/src$1',
   },
   moduleFileExtensions: ['ts', 'js', 'json', 'node'],
   moduleDirectories: ['node_modules', 'packages'],
