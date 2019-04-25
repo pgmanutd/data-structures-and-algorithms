@@ -2,6 +2,6 @@
   "*.ts": [
     "npm run format",
     "git add",
-    "npm run test:coverage -- --bail --findRelatedTests"
+    "npm run test -- --bail --findRelatedTests"
   ]
 }

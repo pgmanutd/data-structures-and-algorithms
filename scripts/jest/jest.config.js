@@ -23,9 +23,9 @@ module.exports = {
   moduleFileExtensions: ['ts', 'js', 'json', 'node'],
   moduleDirectories: ['node_modules', 'packages'],
   setupFiles: ['<rootDir>/scripts/jest/throwConsoleError.js'],
-  collectCoverageFrom: ['packages/**/*.ts'],
+  collectCoverageFrom: ['packages/**/*.ts', '!**/node_modules/**'],
   coveragePathIgnorePatterns: ['.*.(test|spec).ts?.snap?$'],
-  coverageDirectory: 'reports/coverage',
+  coverageDirectory: '<rootDir>/reports/coverage',
   coverageThreshold: {
     global: {
       lines: 100,
