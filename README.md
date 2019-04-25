@@ -17,6 +17,10 @@ In computer science, a data structure is a data organization, management and sto
 
 ## Big O Notation
 
+> We are not concerned with [space complexity](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ch2.md/#the-importance-of-declarative-style) when we enter the world of functional programming. Though time complexity does matter and we will try to cover it as much as possible.
+
+> In case of recursive functions, we will try to ensure that all of them are [tail call optimized](http://2ality.com/2015/06/tail-call-optimization.html).
+
 Check [Big O CheatSheet](http://bigocheatsheet.com) below:
 
 ![image](https://user-images.githubusercontent.com/7638708/51164920-942acb80-18c4-11e9-817f-abf4e6571f28.png)
