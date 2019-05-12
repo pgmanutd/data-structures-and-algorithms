@@ -15,7 +15,7 @@ module.exports = {
     },
   },
   moduleNameMapper: {
-    '^.+\\.(jpe?g|png|gif|ttf|eot|woff|svg|json)$':
+    '^.+\\.(jpe?g|png|gif|ttf|eot|woff|svg)$':
       '<rootDir>/scripts/jest/fileMock.js',
     '^@data-structures-and-algorithms/utils(.*)$':
       '<rootDir>/packages/utils/src$1',
