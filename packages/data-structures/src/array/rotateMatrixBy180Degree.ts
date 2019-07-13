@@ -18,14 +18,9 @@
 
 import * as R from 'ramda';
 
-const rotateMatrixBy180Degree = R.compose(
+const rotateMatrixBy180Degree = R.compose<any[], any[], any[]>(
   R.map(R.reverse),
-  /**
-   * NOTE: Some issue with ramda @types.
-   * "reverse" typing is failing when used with "map" in "compose".
-   * This worked perfectly when lodash/fp was used.
-   */
-  R.reverse as (array: any[]) => any[],
+  R.reverse,
 );
 /**
  * Complexity:
