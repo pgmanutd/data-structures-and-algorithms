@@ -18,6 +18,14 @@
     "resolveJsonModule": true,
     "baseUrl": "./packages",
     "paths": {
+      "@data-structures-and-algorithms/algorithms*": [
+        "algorithms/src*",
+        "algorithms/src/index"
+      ],
+      "@data-structures-and-algorithms/data-structures*": [
+        "data-structures/src*",
+        "data-structures/src/index"
+      ],
       "@data-structures-and-algorithms/utils*": [
         "utils/src*",
         "utils/src/index"
