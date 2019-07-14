@@ -16,7 +16,7 @@ const quickSort: QuickSort = R.curry<QuickSort>(array => {
 });
 /**
  * Complexity:
- * Time Complexity: O(n*log(n))
+ * Time Complexity: O(n log(n))
  */
 
 export default quickSort;
