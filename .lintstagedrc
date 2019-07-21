@@ -1,7 +1,0 @@
-{
-  "*.ts": [
-    "npm run format",
-    "git add",
-    "npm run test -- --bail --findRelatedTests"
-  ]
-}
