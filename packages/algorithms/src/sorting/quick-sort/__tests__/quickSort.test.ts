@@ -13,14 +13,14 @@ import quickSort from '../quickSort';
 describe('#quickSort', () => {
   testSort<typeof quickSort>(quickSort);
 
-  const testingQuickSortTimeComplexity = testSortTimeComplexity<
+  const testQuickSortTimeComplexity = testSortTimeComplexity<
     typeof quickSort,
     number
   >(quickSort);
 
-  testingQuickSortTimeComplexity(sortedArray, 35);
-  testingQuickSortTimeComplexity(notSortedArray, 35);
-  testingQuickSortTimeComplexity(reverseArray, 35);
-  testingQuickSortTimeComplexity(equalArray, 31);
-  testingQuickSortTimeComplexity(negativeArray, 31);
+  testQuickSortTimeComplexity(sortedArray, 35);
+  testQuickSortTimeComplexity(notSortedArray, 35);
+  testQuickSortTimeComplexity(reverseArray, 35);
+  testQuickSortTimeComplexity(equalArray, 31);
+  testQuickSortTimeComplexity(negativeArray, 31);
 });
