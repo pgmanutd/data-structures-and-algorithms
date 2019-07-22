@@ -1,7 +1,14 @@
 import * as R from 'ramda';
 
-type QuickSort = (array: number[]) => number[];
-const quickSort: QuickSort = R.curry<QuickSort>(array => {
+import { sort } from '@data-structures-and-algorithms/algorithms/sorting/utils';
+
+type QuickSort = (
+  array: number[],
+  { captureFnCall }: { captureFnCall: () => void },
+) => number[];
+const quickSort: QuickSort = R.curry<QuickSort>((array, { captureFnCall }) => {
+  captureFnCall();
+
   if (!R.length(array)) {
     return [];
   }
@@ -9,9 +16,9 @@ const quickSort: QuickSort = R.curry<QuickSort>(array => {
   const [less, more] = R.partition(R.gt(R.head(array)), R.tail(array));
 
   return R.flatten([
-    quickSort(less),
+    quickSort(less, { captureFnCall }),
     R.head(array),
-    quickSort(more),
+    quickSort(more, { captureFnCall }),
   ]) as number[];
 });
 /**
@@ -19,4 +26,4 @@ const quickSort: QuickSort = R.curry<QuickSort>(array => {
  * Time Complexity: O(n log(n))
  */
 
-export default quickSort;
+export default sort(quickSort);

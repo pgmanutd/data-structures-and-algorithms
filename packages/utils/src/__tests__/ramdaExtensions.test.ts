@@ -1,4 +1,4 @@
-import { mapIndexed, filterIndexed } from '../ramdaExtensions';
+import { mapIndexed, filterIndexed, noop } from '../ramdaExtensions';
 
 describe('#ramdaExtensions', () => {
   describe('#mapIndexed', () => {
@@ -20,6 +20,15 @@ describe('#ramdaExtensions', () => {
       expect(filterIndexed((_, index) => index % 2 === 0)(array)).toEqual(
         output,
       );
+    });
+  });
+
+  describe('#noop', () => {
+    test.each`
+      output
+      ${undefined}
+    `('returns $output when called', ({ output }) => {
+      expect(noop()).toEqual(output);
     });
   });
 });

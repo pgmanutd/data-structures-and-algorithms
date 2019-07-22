@@ -54,7 +54,7 @@ describe('#arrayCreation', () => {
     );
   });
 
-  describe('#length', () => {
+  describe('#realArray', () => {
     test.each`
       array                                                | output
       ${array(10)(array(20)(array(30)(array(40)(EMPTY))))} | ${[10, 20, 30, 40]}
