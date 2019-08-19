@@ -7,8 +7,9 @@
 
 export const I = <T1>(x: T1) => x;
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
 // @ts-ignore: no-unused-vars
-// eslint-disable-next-line  @typescript-eslint/no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const K = <T1, T2>(x: T1) => (y: T2) => x;
 
 export const A = <T1, R>(f: (x: T1) => R) => (x: T1) => f(x);
