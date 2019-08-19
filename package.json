@@ -10,8 +10,8 @@
     }
   },
   "scripts": {
+    "postinstall": "lerna bootstrap",
     "clean": "lerna clean -y",
-    "bootstrap": "lerna bootstrap",
     "lint:scripts": "eslint \"packages/**/*.{js,ts}\" \"scripts/**/*.{js,ts}\" --cache --cache-location \".cache/.eslintcache/\"",
     "lint": "npm run lint:scripts",
     "typecheck": "tsc --noEmit -p ./tsconfig.typecheck.json",

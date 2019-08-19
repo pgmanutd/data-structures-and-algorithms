@@ -22,8 +22,6 @@ cd data-structures-and-algorithms
 
 npm install
 
-npm run bootstrap
-
 npm run test:coverage
 ```
 
