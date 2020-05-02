@@ -13,7 +13,10 @@ const quickSort: QuickSort = R.curry<QuickSort>((array, { captureFnCall }) => {
     return [];
   }
 
-  const [less, more] = R.partition(R.gt(R.head(array)), R.tail(array));
+  const [less, more] = R.partition(
+    R.gt(R.head(array) as number),
+    R.tail(array),
+  );
 
   return R.flatten([
     quickSort(less, { captureFnCall }),

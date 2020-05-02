@@ -45,10 +45,7 @@ describe('#arrayCreation', () => {
       'returns $output for passed $array and $index',
       ({ arrayInput, index, output }) => {
         expect(
-          R.compose(
-            getByIndex(index),
-            map(R.multiply(10)),
-          )(arrayInput),
+          R.compose(getByIndex(index), map(R.multiply(10)))(arrayInput),
         ).toEqual(output);
       },
     );

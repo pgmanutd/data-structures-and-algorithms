@@ -16,12 +16,7 @@ export const arrayDeletionUsingSlice = R.curry(
 
 // Solution 2
 export const arrayDeletionUsingFilter = (index: number) =>
-  filterIndexed(
-    R.compose(
-      R.complement(R.equals(index)),
-      R.nthArg(1),
-    ),
-  );
+  filterIndexed(R.compose(R.complement(R.equals(index)), R.nthArg(1)));
 /**
  * Complexity:
  * Time Complexity: O(n)

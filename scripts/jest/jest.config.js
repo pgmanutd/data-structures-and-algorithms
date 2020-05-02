@@ -6,12 +6,11 @@ module.exports = {
   notify: false,
   roots: ['<rootDir>/packages'],
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.ts$',
-  transform: {
-    '^.+\\.ts$': 'ts-jest',
-  },
+  preset: 'ts-jest',
   globals: {
     'ts-jest': {
       tsConfig: '<rootDir>/tsconfig.json',
+      isolatedModules: true,
     },
   },
   moduleNameMapper: {

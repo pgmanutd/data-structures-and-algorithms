@@ -19,13 +19,7 @@ export const arrayUpdateUsingSlice = R.curry(
 export const arrayUpdateUsingMap = R.curry((element: any, index: number) =>
   mapIndexed(
     R.cond([
-      [
-        R.compose(
-          R.equals(index),
-          R.nthArg(1),
-        ),
-        R.always(element),
-      ],
+      [R.compose(R.equals(index), R.nthArg(1)), R.always(element)],
       [R.T, R.nthArg(0)],
     ]),
   ),

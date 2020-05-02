@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Data structures repo",
   "engines": {
-    "node": ">=8"
+    "node": "12.x"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,6 @@
   "homepage": "https://github.com/pgmanutd/data-structures-and-algorithms/tree/master/packages/data-structures#readme",
   "dependencies": {
     "@data-structures-and-algorithms/utils": "^1.0.0",
-    "ramda": "^0.26.1"
+    "ramda": "^0.27.0"
   }
 }
