@@ -37,7 +37,7 @@ Please adhere to [Code of Conduct](./.github/CODE_OF_CONDUCT.md).
 
 ## Issues
 
-Please make sure to read the [Issue Reporting Guidelines](./.github/ISSUE_TEMPLATE.md) before opening an issue.
+Want to report a bug or have a new feature request? You can create one [here](https://github.com/pgmanutd/data-structures-and-algorithms/issues/new/choose).
 
 ## License
 
